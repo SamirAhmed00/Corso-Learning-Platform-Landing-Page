@@ -1,0 +1,166 @@
+/* =========================================================
+   CORSO — Base
+   Resets, element defaults, base typography, container,
+   focus styles, link defaults.
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--color-ink);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "ss01";
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Typography defaults ---------- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-ink);
+}
+
+h1 { font-size: var(--fs-5xl); }
+h2 { font-size: var(--fs-4xl); }
+h3 { font-size: var(--fs-3xl); }
+h4 { font-size: var(--fs-2xl); }
+h5 { font-size: var(--fs-xl); }
+h6 { font-size: var(--fs-lg); }
+
+p {
+  margin: 0 0 var(--space-4);
+  color: var(--color-ink-soft);
+  line-height: var(--lh-relaxed);
+}
+
+p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: var(--fw-semibold); color: var(--color-ink); }
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--color-primary-600); }
+
+ul, ol {
+  margin: 0 0 var(--space-4);
+  padding-left: 1.25rem;
+}
+
+/* ---------- Eyebrow / section overline ---------- */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+/* ---------- Section spacing ---------- */
+section {
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
+}
+
+.section--subtle { background-color: var(--color-surface-subtle); }
+.section--muted  { background-color: var(--color-surface-muted); }
+.section--ink    { background-color: var(--color-surface-inverse); color: var(--color-ink-inverse); }
+.section--ink h1, .section--ink h2, .section--ink h3, .section--ink h4 { color: var(--color-ink-inverse); }
+.section--ink p  { color: rgba(255, 255, 255, 0.78); }
+
+/* ---------- Container ---------- */
+.container,
+.container-fluid {
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+}
+
+/* ---------- Focus ring (modern, accessible) ---------- */
+:focus { outline: none; }
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-ring);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+  transition: outline-offset var(--dur-fast) var(--ease-out);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-ink-inverse);
+}
+
+/* ---------- Utilities ---------- */
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.text-balance { text-wrap: balance; }
+.text-pretty  { text-wrap: pretty; }
+
+.lead {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--color-ink-soft);
+}
+
+/* ---------- Reveal-on-scroll initial state (used by GSAP fallback) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-slow) var(--ease-out),
+              transform var(--dur-slow) var(--ease-out);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+}

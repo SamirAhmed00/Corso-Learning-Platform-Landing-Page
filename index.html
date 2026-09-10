@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: Inter (UI) + Fraunces (display) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Bootstrap 5 (grid + utilities only) -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Font Awesome (all icons) -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Corso design system (load order matters) -->
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- SEO & social -->
+    <meta name="description" content="Corso — Premium online training, seminars, and educational programs. Build skills that move your career forward." />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Corso — Premium Online Training & Seminars" />
+    <meta property="og:description" content="Expert-led training, live seminars, and frameworks that sharpen the skills modern professionals need." />
+    <meta property="og:image" content="images/header-background.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Corso — Premium Online Training & Seminars" />
+    <meta name="twitter:description" content="Expert-led training, live seminars, and frameworks that sharpen the skills modern professionals need." />
+    <meta name="twitter:image" content="images/header-background.jpg" />
+
+    <link rel="icon" href="images/favicon.png" />
+    <title>Corso — Premium Online Training &amp; Seminars</title>
+  </head>
+  <body class="no-js">
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <img class="page-loader__mark" src="images/logo.webp" alt="" width="140" height="36" />
+    </div>
+    <noscript><style>.page-loader { display: none !important; }</style></noscript>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar" data-scroll-progress></div>
+    </div>
+    <script>document.body.classList.remove('no-js'); document.body.classList.add('is-loading');</script>
+
+    <!-- Start Nav -->
+    <header class="site-header" data-header>
+      <nav class="nav-bar" aria-label="Primary">
+        <div class="container nav-bar__inner">
+          <a href="#top" class="nav-bar__brand" aria-label="Corso home">
+            <img src="images/logo.webp" alt="Corso" width="140" height="36" decoding="async" fetchpriority="high" />
+          </a>
+
+          <button class="nav-toggle" type="button"
+                  aria-label="Toggle navigation menu"
+                  aria-expanded="false"
+                  aria-controls="primary-nav"
+                  data-nav-toggle>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav-panel" id="primary-nav" data-nav-panel>
+            <ul class="nav-list" role="list">
+              <li><a href="#top" class="nav-link is-active" data-nav-link>Home</a></li>
+              <li><a href="#discover" class="nav-link" data-nav-link>Discover</a></li>
+              <li><a href="#summary" class="nav-link" data-nav-link>Summary</a></li>
+              <li><a href="#testimonials" class="nav-link" data-nav-link>Reviews</a></li>
+              <li><a href="#takeaways" class="nav-link" data-nav-link>Takeaways</a></li>
+              <li><a href="#faq" class="nav-link" data-nav-link>FAQ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <a href="#register" class="btn btn--sm nav-cta" data-nav-link>
+                Register
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <ul class="nav-social" role="list" aria-label="Social media">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Nav -->
+
+    <main id="main">
+    <!-- Start Hero -->
+    <header class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-image"></div>
+        <div class="hero__bg-glow"></div>
+        <div class="hero__bg-overlay"></div>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__content" data-hero-content>
+          <span class="eyebrow hero__eyebrow" data-hero-item>
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Online Training Platform
+          </span>
+
+          <h1 class="hero__title text-balance" data-hero-item>
+            Explore Our <em>Training</em> and Seminar Videos
+          </h1>
+
+          <p class="hero__lead text-pretty" data-hero-item>
+            Whether you're a beginner or an experienced professional, our carefully
+            curated content will empower you to enhance your skills and expand your
+            knowledge.
+          </p>
+
+          <div class="hero__actions" data-hero-item>
+            <a href="#register" class="btn btn--lg">
+              Register Now
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#discover" class="btn btn--lg btn--outline">
+              Discover More
+            </a>
+          </div>
+
+          <div class="hero__trust" data-hero-item>
+            <div class="hero__avatars" aria-hidden="true">
+              <span class="hero__avatar" style="background-image:url(images/testimonial-1.webp)"></span>
+              <span class="hero__avatar" style="background-image:url(images/testimonial-2.webp)"></span>
+              <span class="hero__avatar" style="background-image:url(images/testimonial-3.webp)"></span>
+              <span class="hero__avatar" style="background-image:url(images/testimonial-4.webp)"></span>
+            </div>
+            <div class="hero__trust-text">
+              <strong>12,000+</strong> learners enrolled worldwide
+              <span class="hero__rating" aria-label="Rated 4.9 out of 5">
+                <span aria-hidden="true">★ ★ ★ ★ ★</span>
+                <em>4.9/5 average</em>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media" data-hero-media>
+          <div class="hero-carousel" data-hero-carousel>
+            <div class="hero-carousel__viewport">
+              <div class="hero-carousel__track" data-hero-track>
+                <div class="hero-carousel__slide is-active">
+                  <img src="images/header-slide-1.webp"
+                       alt="Live training session with engaged audience"
+                       width="800" height="600"
+                       decoding="async" fetchpriority="high" />
+                </div>
+                <div class="hero-carousel__slide">
+                  <img src="images/header-slide-2.webp"
+                       alt="Expert instructor presenting key concepts"
+                       loading="lazy" decoding="async" width="800" height="600" />
+                </div>
+                <div class="hero-carousel__slide">
+                  <img src="images/header-slide-3.webp"
+                       alt="Interactive seminar workshop in session"
+                       loading="lazy" decoding="async" width="800" height="600" />
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-carousel__controls">
+              <button class="hero-carousel__btn" type="button"
+                      data-hero-prev aria-label="Previous slide">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <div class="hero-carousel__indicators" role="tablist" aria-label="Hero slides">
+                <button class="hero-carousel__dot is-active" type="button"
+                        data-hero-goto="0" aria-label="Go to slide 1"></button>
+                <button class="hero-carousel__dot" type="button"
+                        data-hero-goto="1" aria-label="Go to slide 2"></button>
+                <button class="hero-carousel__dot" type="button"
+                        data-hero-goto="2" aria-label="Go to slide 3"></button>
+              </div>
+              <button class="hero-carousel__btn" type="button"
+                      data-hero-next aria-label="Next slide">
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#register" class="hero__scroll" aria-label="Scroll to next section">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </header>
+    <!-- End Hero -->
+    <!-- Start Register Section -->
+    <section class="register" id="register">
+      <div class="register__bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6" data-reveal="left">
+            <span class="eyebrow">Get Started</span>
+            <h2 class="text-balance">
+              Unlock Your Potential with
+              <em>Engaging Content</em>
+            </h2>
+            <p class="register__lead text-pretty">
+              Our wide range of training and seminar videos are designed to
+              empower you with valuable knowledge and skills.
+            </p>
+
+            <ul class="register__features" role="list">
+              <li class="register__feature">
+                <span class="register__check" aria-hidden="true">
+                  <i class="fas fa-check"></i>
+                </span>
+                <div>
+                  <strong>Gain Expertise</strong>
+                  <p>Our videos provide in-depth insights and practical tips to enhance your expertise in various domains.</p>
+                </div>
+              </li>
+              <li class="register__feature">
+                <span class="register__check" aria-hidden="true">
+                  <i class="fas fa-check"></i>
+                </span>
+                <div>
+                  <strong>Stay Updated</strong>
+                  <p>Stay up-to-date with the latest industry trends and advancements through our informative content.</p>
+                </div>
+              </li>
+              <li class="register__feature">
+                <span class="register__check" aria-hidden="true">
+                  <i class="fas fa-check"></i>
+                </span>
+                <div>
+                  <strong>Expand Your Network</strong>
+                  <p>Connect with like-minded individuals and industry experts, fostering new connections and opportunities.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-6" data-reveal="right">
+            <form class="register__form" novalidate>
+              <div class="register__form-head">
+                <h3>Create your account</h3>
+                <p>Start your 7-day free trial. No credit card required.</p>
+              </div>
+
+              <div class="form-field">
+                <input type="text" id="reg-name" name="name"
+                       class="form-input" placeholder=" " required
+                       autocomplete="name" />
+                <label for="reg-name">Full name</label>
+              </div>
+
+              <div class="form-field">
+                <input type="email" id="reg-email" name="email"
+                       class="form-input" placeholder=" " required
+                       autocomplete="email" />
+                <label for="reg-email">Work email</label>
+              </div>
+
+              <div class="form-field">
+                <input type="tel" id="reg-phone" name="phone"
+                       class="form-input" placeholder=" "
+                       autocomplete="tel" />
+                <label for="reg-phone">Phone number <span class="form-field__hint">(optional)</span></label>
+              </div>
+
+              <button type="submit" class="btn btn--lg btn--block register__submit">
+                Register Now
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Register Section -->
+    <!-- Start Details 1 — Instructor -->
+    <section class="details" id="discover">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6" data-reveal="left">
+            <figure class="details__media">
+              <span class="details__blob" aria-hidden="true"></span>
+              <img
+                src="images/instructor.webp"
+                alt="Expert instructor leading a small group training session"
+                class="details__image"
+                width="800" height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="details__badge">
+                <span class="details__badge-icon" aria-hidden="true">
+                  <i class="fas fa-award"></i>
+                </span>
+                <span class="details__badge-text">
+                  <strong>20+ Years</strong>
+                  Industry Experience
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="col-12 col-lg-6" data-reveal="right">
+            <span class="eyebrow">Discover Corso</span>
+            <h2 class="text-balance">
+              Enhance Your Skills with
+              <em>Engaging Training Videos</em>
+            </h2>
+            <p class="text-pretty">
+              Our extensive collection of training videos is designed to help you
+              enhance your skills and excel in your chosen field. Whether you're
+              looking to improve your technical expertise or develop essential
+              soft skills, our videos provide valuable insights and practical
+              knowledge.
+            </p>
+            <p class="text-pretty">
+              With expert instructors and comprehensive content, you'll gain the
+              confidence and competence to tackle challenges and achieve success.
+            </p>
+
+            <dl class="details__stats" aria-label="Program at a glance">
+              <div class="details__stat">
+                <dt>250+</dt>
+                <dd>Video courses</dd>
+              </div>
+              <div class="details__stat">
+                <dt>45K+</dt>
+                <dd>Active learners</dd>
+              </div>
+              <div class="details__stat">
+                <dt>4.9<small>★</small></dt>
+                <dd>Average rating</dd>
+              </div>
+            </dl>
+
+            <a href="#summary" class="details__link">
+              Explore the curriculum
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Details 1 -->
+    <!-- Start Points -->
+    <section class="points">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal="up">
+          <span class="eyebrow">Why Choose Corso</span>
+          <h2 class="text-balance">
+            Unlock Your Potential with
+            <em>Engaging Training Videos</em>
+          </h2>
+          <p class="section-head__lead text-pretty">
+            Discover the features that make our platform the best choice for
+            your learning journey — designed for serious learners and built
+            around real outcomes.
+          </p>
+        </header>
+
+        <ul class="points__grid" role="list">
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">01</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+            </span>
+            <h3>Enhance Your Skills</h3>
+            <p>
+              Our training videos provide comprehensive insights and practical
+              tips to help you enhance your skills in various domains — from
+              technical expertise to soft skills.
+            </p>
+          </li>
+
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">02</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <h3>Stay Updated</h3>
+            <p>
+              Keep pace with the latest industry trends and advancements through
+              our informative and up-to-date videos. Stay ahead of the curve and
+              broaden your knowledge.
+            </p>
+          </li>
+
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">03</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-users"></i>
+            </span>
+            <h3>Connect with Experts</h3>
+            <p>
+              Our platform lets you connect with like-minded individuals and
+              industry experts. Expand your network, foster new connections,
+              and unlock new opportunities.
+            </p>
+          </li>
+
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">04</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-laptop"></i>
+            </span>
+            <h3>Flexible Learning</h3>
+            <p>
+              Our training videos are available on-demand — learn at your own
+              pace and convenience. Access the content anytime, anywhere, and
+              tailor your learning experience.
+            </p>
+          </li>
+
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">05</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-lightbulb"></i>
+            </span>
+            <h3>Practical Knowledge</h3>
+            <p>
+              Gain practical knowledge and apply it directly to real-world
+              scenarios. Our videos offer hands-on insights and practical tips
+              to help you succeed professionally.
+            </p>
+          </li>
+
+          <li class="point-card" data-reveal="up">
+            <span class="point-card__num" aria-hidden="true">06</span>
+            <span class="point-card__icon" aria-hidden="true">
+              <i class="fas fa-arrows-rotate"></i>
+            </span>
+            <h3>Continuous Learning</h3>
+            <p>
+              Lifelong learning is key to personal and professional growth.
+              Explore a vast collection of training videos and embark on a
+              journey of continuous self-improvement.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Points -->
+    <!-- Start Summary -->
+    <section class="summary" id="summary">
+      <div class="container">
+        <div class="row align-items-start g-5">
+          <div class="col-12 col-lg-5" data-reveal="left">
+            <span class="eyebrow">Course Summary</span>
+            <h2 class="text-balance">
+              What You'll
+              <em>Walk Away With</em>
+            </h2>
+            <p class="summary__lead text-pretty">
+              A focused curriculum built around three pillars — comprehensive
+              content, world-class instructors, and real-world application you
+              can put to work the same day.
+            </p>
+            <a href="#register" class="btn summary__cta">
+              Enroll today
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-7" data-reveal="right">
+            <ol class="timeline" role="list">
+              <li class="timeline__progress" aria-hidden="true"></li>
+              <li class="timeline__item">
+                <span class="timeline__node" aria-hidden="true">
+                  <span class="timeline__node-inner">01</span>
+                </span>
+                <div class="timeline__body">
+                  <div class="timeline__icon" aria-hidden="true">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <h3>Comprehensive Training</h3>
+                  <p>
+                    Our courses provide comprehensive training in a wide range
+                    of topics. From beginner-level fundamentals to advanced
+                    concepts, we offer in-depth content to cater to learners of
+                    all levels.
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <span class="timeline__node" aria-hidden="true">
+                  <span class="timeline__node-inner">02</span>
+                </span>
+                <div class="timeline__body">
+                  <div class="timeline__icon" aria-hidden="true">
+                    <i class="fas fa-chalkboard-user"></i>
+                  </div>
+                  <h3>Expert Instructors</h3>
+                  <p>
+                    Learn from industry experts who bring years of experience
+                    and expertise to the table. Our instructors are passionate
+                    about sharing their knowledge and helping you succeed.
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline__item">
+                <span class="timeline__node" aria-hidden="true">
+                  <span class="timeline__node-inner">03</span>
+                </span>
+                <div class="timeline__body">
+                  <div class="timeline__icon" aria-hidden="true">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <h3>Practical Application</h3>
+                  <p>
+                    We believe in practical learning that goes beyond theory.
+                    Our courses focus on real-world application, equipping you
+                    with the skills and knowledge needed to excel in your field.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Summary -->
+    <!-- Start Details 2 — Seminars -->
+    <section class="details details--reverse" id="seminars">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6" data-reveal="left">
+            <span class="eyebrow">Live Events</span>
+            <h2 class="text-balance">
+              Elevate Your Learning Journey with
+              <em>Expert Seminars</em>
+            </h2>
+            <p class="text-pretty">
+              Join our expert-led seminars and unlock new possibilities in your
+              personal and professional development. Our seminars cover a
+              diverse range of topics — from leadership and innovation to
+              personal growth and productivity.
+            </p>
+            <p class="text-pretty">
+              Immerse yourself in engaging discussions, interactive workshops,
+              and valuable networking opportunities.
+            </p>
+
+            <dl class="details__stats" aria-label="Seminars at a glance">
+              <div class="details__stat">
+                <dt>500+</dt>
+                <dd>Live seminars</dd>
+              </div>
+              <div class="details__stat">
+                <dt>95<small>%</small></dt>
+                <dd>Satisfaction rate</dd>
+              </div>
+              <div class="details__stat">
+                <dt>30+</dt>
+                <dd>Countries</dd>
+              </div>
+            </dl>
+
+            <a href="#register" class="details__link">
+              View upcoming sessions
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-6" data-reveal="right">
+            <figure class="details__media">
+              <span class="details__blob" aria-hidden="true"></span>
+              <img
+                src="images/audience.webp"
+                alt="Engaged seminar audience listening to a presentation"
+                class="details__image"
+                width="800" height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="details__badge">
+                <span class="details__badge-icon" aria-hidden="true">
+                  <i class="fas fa-satellite-dish"></i>
+                </span>
+                <span class="details__badge-text">
+                  <strong>Live &amp; Interactive</strong>
+                  Weekly Sessions
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Details 2 -->
+    <!-- Start Invitation -->
+    <section class="invitation">
+      <div class="invitation__bg" aria-hidden="true">
+        <div class="invitation__bg-image"></div>
+        <div class="invitation__bg-pattern"></div>
+        <div class="invitation__bg-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="invitation__content" data-reveal="up">
+          <span class="eyebrow eyebrow--light">You're Invited</span>
+
+          <h2 class="text-balance">
+            Join Us on
+            <em>December 22nd</em>
+          </h2>
+
+          <p class="invitation__lead text-pretty">
+            We cordially invite you to attend a live seminar exploring modern
+            advertising and marketing — engaging discussions, practical
+            frameworks, and the kind of insights you can put to work the
+            same day. Don't miss this opportunity to sharpen your skills
+            alongside a global community of practitioners.
+          </p>
+
+          <ul class="invitation__meta" role="list">
+            <li class="invitation__meta-item">
+              <span class="invitation__meta-icon" aria-hidden="true">
+                <i class="fas fa-calendar"></i>
+              </span>
+              <span class="invitation__meta-text">
+                <strong>December 22, 2025</strong>
+                <em>Saturday</em>
+              </span>
+            </li>
+            <li class="invitation__meta-item">
+              <span class="invitation__meta-icon" aria-hidden="true">
+                <i class="fas fa-clock"></i>
+              </span>
+              <span class="invitation__meta-text">
+                <strong>10:00 AM EST</strong>
+                <em>90 minutes</em>
+              </span>
+            </li>
+            <li class="invitation__meta-item">
+              <span class="invitation__meta-icon" aria-hidden="true">
+                <i class="fas fa-globe"></i>
+              </span>
+              <span class="invitation__meta-text">
+                <strong>Online &amp; On-Demand</strong>
+                <em>Worldwide</em>
+              </span>
+            </li>
+          </ul>
+
+          <div class="invitation__actions">
+            <a href="#register" class="btn btn--lg">
+              Register Now
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#discover" class="btn btn--lg btn--outline">
+              View Agenda
+            </a>
+          </div>
+
+          <p class="invitation__seats">
+            <span class="invitation__seats-dot" aria-hidden="true"></span>
+            Limited seats — only <strong>200 spots</strong> remaining
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Invitation -->
+
+    <!-- Start Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal="up">
+          <span class="eyebrow">From Our Learners</span>
+          <h2 class="text-balance">
+            What People Are
+            <em>Saying</em>
+          </h2>
+          <p class="section-head__lead text-pretty">
+            Real stories from professionals who used Corso to sharpen their
+            skills, advance their careers, and grow their networks.
+          </p>
+        </header>
+
+        <ul class="testimonials__grid" role="list">
+          <li class="testimonial-card testimonial-card--featured" data-reveal="up">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <div class="testimonial-card__stars" aria-label="Rated 5 out of 5">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-card__quote">
+              The single best learning investment I've made in the last five
+              years. The instructors are world-class, the frameworks are
+              practical, and I started applying what I learned on day one.
+            </p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar"
+                    style="background-image:url(images/testimonial-1.webp)"
+                    aria-hidden="true"></span>
+              <span class="testimonial-card__author-text">
+                <span class="testimonial-card__author-name">Sarah Chen</span>
+                <span class="testimonial-card__author-role">Senior Product Manager, Stripe</span>
+              </span>
+            </div>
+          </li>
+
+          <li class="testimonial-card" data-reveal="up">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <div class="testimonial-card__stars" aria-label="Rated 5 out of 5">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-card__quote">
+              What sets Corso apart is the depth. Every module is researched,
+              every framework tested. It feels less like a course and more
+              like a mentorship.
+            </p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar"
+                    style="background-image:url(images/testimonial-2.webp)"
+                    aria-hidden="true"></span>
+              <span class="testimonial-card__author-text">
+                <span class="testimonial-card__author-name">Marcus Reed</span>
+                <span class="testimonial-card__author-role">Engineering Lead, Vercel</span>
+              </span>
+            </div>
+          </li>
+
+          <li class="testimonial-card" data-reveal="up">
+            <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+            <div class="testimonial-card__stars" aria-label="Rated 5 out of 5">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="testimonial-card__quote">
+              I joined for one seminar and ended up enrolling in the full
+              program. The community alone is worth it — I've met collaborators
+              I now work with weekly.
+            </p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar"
+                    style="background-image:url(images/testimonial-3.webp)"
+                    aria-hidden="true"></span>
+              <span class="testimonial-card__author-text">
+                <span class="testimonial-card__author-name">Priya Sharma</span>
+                <span class="testimonial-card__author-role">Founder, Northwind Studio</span>
+              </span>
+            </div>
+          </li>
+        </ul>
+
+        <p class="testimonials__more">
+          <a href="#subscribe" class="details__link">
+            Read 240+ verified reviews
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+
+    <!-- Start TakeAways -->
+    <section class="takeaways" id="takeaways">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal="up">
+          <span class="eyebrow">Key Takeaways</span>
+          <h2 class="text-balance">
+            What You'll
+            <em>Walk Away With</em>
+          </h2>
+          <p class="section-head__lead text-pretty">
+            Here are the takeaways and benefits you can expect from our
+            programs — designed to compound over time and stay with you
+            long after the seminar ends.
+          </p>
+        </header>
+
+        <ul class="takeaways__grid" role="list">
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-flask"></i>
+            </span>
+            <h3>Research-Backed Content</h3>
+            <p>
+              Explore the latest scientific research and gain valuable
+              insights into various subjects, from physics to biology and
+              everything in between.
+            </p>
+          </li>
+
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-key"></i>
+            </span>
+            <h3>Practical Frameworks</h3>
+            <p>
+              Unlock step-by-step frameworks and methods you can apply
+              immediately — no fluff, just actionable tools for your
+              day-to-day work.
+            </p>
+          </li>
+
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-newspaper"></i>
+            </span>
+            <h3>Industry Updates</h3>
+            <p>
+              Stay informed about the latest news and updates in your
+              industry, keeping you ahead of the curve and facilitating
+              professional growth.
+            </p>
+          </li>
+
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-users"></i>
+            </span>
+            <h3>Collaborative Networking</h3>
+            <p>
+              Connect with professionals from diverse backgrounds and
+              industries to foster collaboration and expand your
+              professional network.
+            </p>
+          </li>
+
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-handshake"></i>
+            </span>
+            <h3>Partnership Opportunities</h3>
+            <p>
+              Discover potential partnership opportunities with like-minded
+              individuals and organizations, opening doors to new
+              collaborations and ventures.
+            </p>
+          </li>
+
+          <li class="takeaway-card" data-reveal="up">
+            <span class="takeaway-card__icon" aria-hidden="true">
+              <i class="fas fa-chart-bar"></i>
+            </span>
+            <h3>Data-Driven Insights</h3>
+            <p>
+              Leverage data analytics to gain valuable insights and make
+              informed decisions, unlocking new possibilities for growth
+              and success.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End TakeAways -->
+    <!-- Start Subscribe -->
+    <section class="subscribe" id="subscribe">
+      <div class="container">
+        <div class="subscribe__inner" data-reveal="up">
+          <header class="section-head section-head--center">
+            <span class="eyebrow">Newsletter</span>
+            <h2 class="text-balance">
+              Insights Delivered
+              <em>From the Experts</em>
+            </h2>
+            <p class="section-head__lead text-pretty">
+              One short, high-signal email each Friday — frameworks, research,
+              and event invites. Curated by our team, never sold or shared.
+            </p>
+          </header>
+
+          <form class="subscribe__form" novalidate>
+            <div class="subscribe__field">
+              <label for="sub-email" class="visually-hidden">Email address</label>
+              <span class="subscribe__field-icon" aria-hidden="true">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <input
+                type="email"
+                id="sub-email"
+                name="email"
+                class="form-input"
+                placeholder="Your work email"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn subscribe__submit">
+                Subscribe
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+            <p class="subscribe__privacy">
+              <i class="fas fa-shield-halved" aria-hidden="true"></i>
+              We respect your inbox. Unsubscribe anytime — no hard feelings.
+            </p>
+            <p class="subscribe__proof">
+              Join <strong>8,000+</strong> subscribers from 60+ countries
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Subscribe -->
+
+    <!-- Start FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal="up">
+          <span class="eyebrow">Frequently Asked</span>
+          <h2 class="text-balance">
+            Questions,
+            <em>Answered</em>
+          </h2>
+          <p class="section-head__lead text-pretty">
+            Everything you need to know before you get started. Can't find
+            what you're looking for? <a href="#" style="color:var(--color-primary)">Contact our team →</a>
+          </p>
+        </header>
+
+        <div class="faq__list" data-reveal="up">
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>How do I access the courses after enrolling?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Immediately after enrollment, you'll receive a welcome email with your account credentials. Sign in to the Corso dashboard and your full curriculum is unlocked — including all on-demand videos, downloadable resources, and the community space.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Are the courses self-paced or scheduled?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Both. Every on-demand module is self-paced with lifetime access. On top of that, we run weekly live workshops and monthly expert seminars that you can attend live or watch the replay.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Can I download videos for offline viewing?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Yes — our iOS and Android apps support offline downloads for all enrolled courses. Just tap the download icon on any video and it's available for 30 days, even without an internet connection.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Do you offer certificates of completion?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Yes. After finishing any course track, you'll receive a verifiable digital certificate you can add to your LinkedIn profile, share with your team, or include in your portfolio. Each certificate has a unique URL for verification.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>What's your refund policy?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>We offer a 30-day no-questions-asked refund on all annual plans. If Corso isn't the right fit, email us within 30 days of your purchase and we'll process a full refund — usually within 2 business days.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Is there a free trial?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Yes. The 7-day free trial gives you full access to one complete course track plus the community space. No credit card required to start, and you can cancel anytime before the trial ends.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              <span>Do you offer team or enterprise plans?</span>
+              <span class="faq-item__icon" aria-hidden="true"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Absolutely. Our enterprise plans include SSO, custom learning paths, dedicated success managers, and volume pricing for teams of 10+. Reach out to our sales team for a tailored proposal and demo.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ -->
+
+    <!-- Start Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4 col-md-6" data-reveal="up">
+              <a href="#top" class="site-footer__brand" aria-label="Corso home">
+                <img src="images/logo.webp" alt="Corso" width="140" height="36" decoding="async" loading="lazy" />
+              </a>
+              <p class="site-footer__about">
+                Premium online training, seminars, and educational programs
+                designed to sharpen the skills modern professionals need.
+              </p>
+              <ul class="site-footer__social" role="list" aria-label="Social media">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6" data-reveal="up">
+              <h3 class="site-footer__heading">Quick Links</h3>
+              <ul class="site-footer__links" role="list">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#takeaways">Takeaways</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6" data-reveal="up">
+              <h3 class="site-footer__heading">Resources</h3>
+              <ul class="site-footer__links" role="list">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-reveal="up">
+              <h3 class="site-footer__heading">Stay in the Loop</h3>
+              <p class="site-footer__about site-footer__about--sm">
+                One short, high-signal email each Friday. Unsubscribe anytime.
+              </p>
+              <form class="site-footer__form" novalidate>
+                <label for="footer-email" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="footer-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your email"
+                  required
+                  autocomplete="email"
+                />
+                <button type="submit" class="site-footer__form-btn" aria-label="Subscribe">
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="container site-footer__bottom-inner">
+          <div class="site-footer__meta">
+            <p class="site-footer__copy">
+              © <span data-current-year>2025</span> Corso. All rights reserved.
+            </p>
+            <p class="site-footer__credit">
+              <span>Built by <strong class="site-footer__credit-name">Samir Ahmed</strong></span>
+              <span class="site-footer__credit-icons">
+                <a href="https://github.com/SamirAhmed00" target="_blank" rel="noopener noreferrer" aria-label="Samir Ahmed on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samir-ahmed00/" target="_blank" rel="noopener noreferrer" aria-label="Samir Ahmed on LinkedIn">
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+              </span>
+            </p>
+          </div>
+          <ul class="site-footer__legal" role="list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+          <a href="#top" class="site-footer__top-link" data-back-to-top aria-label="Back to top">
+            <span>Back to top</span>
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    </main>
+
+    <!-- GSAP + ScrollTrigger (deferred so they don't block render) -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
